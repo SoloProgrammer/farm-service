@@ -1,0 +1,271 @@
+/*  Login css starts here......................... */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.Login_box {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
+.padding-left-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+a {
+    outline: none;
+    list-style: none;
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+.form_control {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: .3rem !important;
+}
+
+.Login_box .logo {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+}
+
+.Login_box .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.m-top {
+    margin-top: 2rem;
+}
+
+.Login_box p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(3, 115, 221);
+}
+
+.Login_box .inpt_box {
+    text-align: center;
+    margin-bottom: .9rem;
+}
+
+.Login_box .bottom_bts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .3rem;
+}
+
+.Login_box button {
+    outline: none;
+}
+
+.Login_box .signIn_btn {
+    width: 100%;
+    margin-top: .5rem;
+}
+
+/*  Login css ends here......................... */
+
+
+/* Home css starts here................... */
+.Home_box{
+    height: 2000px;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 30rem;
+}
+
+.header .header_img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .header_img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.header svg {
+    width: 100%;
+}
+
+.section h1 span {
+    color: transparent;
+    font-size: 2.9rem;
+    padding: 0rem 6rem;
+    position: relative;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.section h1 span::before {
+    position: absolute;
+    content: '';
+    bottom: -1rem;
+    left: 18%;
+    border-radius: .4rem;
+    height: .5rem;
+    background: brown;
+    width: 64%;
+
+}
+
+.all_equipments {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_equipments .equip {
+    width: 20rem;
+    height: 15rem;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.all_equipments .equip img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 0rem;
+}
+.all_equipments .equip:hover{
+  transform: translateY(-1rem);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+}
+#Our_service{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding-left: .5rem;
+    margin-top: 2.5rem; 
+}
+
+#Our_service .right h3{
+    text-transform:capitalize !important;
+    font-weight: 400;
+    font-size: 2.1rem;
+    padding-bottom: 1.5rem;
+
+}
+#Our_service .right p{
+    font-size: 1.15rem;
+    color: gray;
+}
+
+
+
+/* Home css ends here................... */
+
+
+
+/* Navbar csss starts here.................... */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    height: 6rem;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    left: 0;
+    align-items: center;
+}
+
+.brand_side{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.brand_side .brand_name{
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: .05rem;
+    color: green;
+}
+.brand_side .brand_logo img{
+    width: 6rem;
+}
+.navbar .navigate_side ul{
+    display: flex;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0;
+    padding-right: 1rem;
+}
+.navbar .navigate_side ul li{
+   list-style: none;
+   text-decoration: none;
+   cursor: pointer;
+   font-weight: 500;
+   color: black;
+   position: relative;
+}
+.navbar .navigate_side ul li.active::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: .2rem;
+    bottom: 0;
+    background: rgb(7, 172, 7);
+    left: 0;
+    transform: scale(0);
+    border-radius: .4rem;
+    transition: .3s;
+}
+.navbar .navigate_side ul li.active::before{
+    transform: scale(1);
+}
+.navbar .navigate_side button{
+    outline: none;
+}
+.navbar .navigate_side ul li.active button{
+    color: rgb(8, 187, 8);
+}
+.navbar .navigate_side ul li.active{
+    font-weight: 600;
+}
+
+/* Navbar csss ends here.................... */
+
+
+
+
+
+
+/* Media query6 starts here.................. */
+
+@media (max-width:600px) {
+    .Login_box .logo {
+        width: 9rem;
+        height: 9rem;
+        margin: auto;
+    }
+}
+
+/* Media query ends here.................. */
