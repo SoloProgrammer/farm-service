@@ -24,3 +24,5 @@ yarn-error.log*
 
 /src/Components
 /src/Material_UI
+/src/Farmer_Project
+/src/Config

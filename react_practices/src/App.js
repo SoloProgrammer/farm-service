@@ -10,30 +10,30 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import ComboBox from './Material_UI/ComboBox';
-import Container from '@mui/material/Container';
 import Farm_app from './Farmer_Project/Farm_app';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SearchPage from './SearchPage/SearchPage';
 
 
 function App() {
    return (
       <>
-         <Container maxWidth="lg">
+         {/* <Container maxWidth="lg"> */}
             <Router>
 
                <div className="Head_componets">
                   {/* <ImageSlider/>   */}
                   {/* <Comments/> */}
-                  {/* <Pagination/> */}
+                  <Pagination/>
                   {/* <ComboBox/> */}
-
-                  <Farm_app />
+                  {/* <Farm_app /> */}
+                  {/* <SearchPage/> */}
 
                </div>
 
             </Router>
 
-         </Container>
+         {/* </Container> */}
          {/* <Footer/> */}
       </>
    )

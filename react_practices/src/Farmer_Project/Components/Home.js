@@ -1,48 +1,80 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import farm_banner from '../Images/farm.jpg'
 import service_img from '../Images/service.jpeg'
+import Container from '@mui/material/Container';
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Home() {
+
+  useEffect(() => {
+    document.title = "Harvestigation - Home"
+  }, [])
   return (
     <div className='Home_box'>
       <section className='section'>
         <h1 className="header_title text-center">
-          <span>Welcome To Rental Farming Equipment</span>
+          <span>Welcome To Crop <b className='brandname'>Harvestigation</b> Company </span>
         </h1>
       </section>
       <section className='header section'>
-        <div className="header_img">
-          <img src={farm_banner} alt="" srcset="" />
+        <div className="header_content_section">
+          <h2>Harvestigation</h2>
+          <h4 className='letter_spacing'>
+            Get Informed Decisions About Your Farming Strategy.
+          </h4>
+          <br />
+          <h4 className='letter_spacing'>
+            Here Are Some Questions We'll Answer
+          </h4>
+          <br />
+          <p>1. What crop to plant here?</p>
+          <p>2. What fertilizer to use?</p>
+          <p>3. Which disease do your crop have?</p>
+          <br />
         </div>
       </section>
       <section className='section m-top'>
         <h1 className="header_title text-center">
-          <span>Find Your best Farm Equipment Here</span> <span style={{"marginTop":"1rem","display":"inline-block"}}><img width={80} src="https://cdn-icons-png.flaticon.com/512/3665/3665077.png" alt="" /></span> 
+          <span><b className='brandname'>Harvestigation</b> Improves Growth of Crops by 85.99%</span>
+          {/* <span style={{ "marginTop": "1rem", "display": "inline-block" }}><img className='tractor' width={80} src="https://cdn-icons-png.flaticon.com/512/3665/3665077.png" alt="" /></span> */}
         </h1>
       </section>
       <section className='all_equipments'>
-          <div className="equip"><img src="https://i.ytimg.com/vi/THv0yUx7sTA/maxresdefault.jpg" alt="" /></div>
-          <div className="equip"><img src="https://tse4.mm.bing.net/th?id=OIP.BR9Jx8qAClEOyNEyWNldhAAAAA&pid=Api&P=0" alt="" /></div>
-          <div className="equip"><img src="https://qph.fs.quoracdn.net/main-qimg-828b62f0a55b75f8269c6680991b4c96" alt="" /></div>
+        <div className="equip"><img src="https://tse2.explicit.bing.net/th?id=OIP.EK7UHP0cJxcJCZMuBkMLhAHaE7&pid=Api&P=0" alt="" /></div>
+        <div className="equip"><img src="https://tse2.mm.bing.net/th?id=OIP.-s2YVSCWaOicm_pwt5m0RAHaFP&pid=Api&P=0" alt="" /></div>
+        <div className="equip"><img src="https://tse3.mm.bing.net/th?id=OIP.qryfWFOpzhQUCIGhG38cVgHaES&pid=Api&P=0" alt="" /></div>
+        <div className="equip"><img src="https://cdn.wikifarmer.com/wp-content/uploads/2019/05/Growing-Eggplant-for-Profit.jpg" alt="" /></div>
       </section>
-      <section className='section m-top'>
-        <h1 className="text-center">
-          <span>Our Service!</span>
-        </h1>
-      </section>
-      <section id='Our_service' className='section m-top'>
+      <Container maxWidth="lg">
+        <section className='section m-top'>
+          <h1 className="text-center">
+            <span>Our Service!</span>
+          </h1>
+        </section>
+        <section id='Our_service' className='section m-top'>
           <div className="left">
-            <img src={service_img} alt="" />
+            <img src="https://harvestify.herokuapp.com/static/images/s3.jpg" alt="" />
           </div>
           <div className="right">
-             <h3>
-                RENTAL FARM EQUIPMENT <span><img width={45} src="https://cdn-icons-png.flaticon.com/512/7390/7390236.png" alt="" /></span> SERVICE!
-             </h3>
-             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, unde suscipit quos quasi excepturi nesciunt explicabo beatae numquam id cum, odit, nostrum ullam similique labore eos fugiat consequuntur. Iusto neque, distinctio incidunt eligendi necessitatibus animi, sint accusamus, veniam vel placeat itaque fugit laboriosam sit quibusdam quae suscipit! Asperiores eaque cum suscipit necessitatibus esse saepe illum minima ad nemo. Blanditiis laboriosam est accusantium repellendus doloribus ad dicta architecto necessitatibus odit, illo ullam? Vero, culpa. Cum voluptas in asperiores nobis assumenda cumque sed! Rerum repudiandae amet earum, aut consequuntur fuga in eveniet adipisci ex cupiditate quibusdam enim. Hic eligendi velit ab quaerat?
-             </p>
+            <h4>
+              Best Crop Harvesting and Cultivation Technique!<span><img src="https://cdn-icons-png.flaticon.com/512/3442/3442648.png" alt="crop" className='flat_icon_img' /></span>
+            </h4>
+            <br />
+            <h2 className='letter_spacing'>
+              CROP
+            </h2>
+            <br />
+            <p>
+              Recommendation about the type of crops to be cultivated which is best suited
+              for the respective conditions.
+            </p>
+            <Link to="/activate_crop"><Button className='mui_btn' variant="text">lets Get Started</Button></Link> 
           </div>
-      </section>
+        </section>
+      </Container>
+
+
     </div>
   )
 }

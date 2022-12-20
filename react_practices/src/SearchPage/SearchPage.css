@@ -1,0 +1,131 @@
+.search_conatiner {
+    height: 100%;
+    background-color: rgba(225, 222, 222, 0.314);
+    padding: 20px;
+}
+
+.search_conatiner_row {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* left grid section */
+.left_grid_row {
+    margin-top: 10px;
+    background-color: white; 
+    border-radius: 5px;
+    padding: 10px; 
+    padding-left: 0.7rem;
+}
+.select:hover{
+    cursor: pointer !important;
+}
+.css-fpx9wx-multiValue {
+    background: #d3d3d37a !important;
+}
+.left_grid_row > div {
+    align-items: center;
+    padding: 10px 10px;
+    flex-wrap: wrap;    
+}
+
+.left_grid_row > div > span:first-child {
+    font-weight: bold;
+    color: rgb(83, 81, 81);
+}
+
+.search_ageField, .search_heightField {
+    align-items: center;
+}
+
+/* right grid section */
+.right_grid_row {
+    padding: 10px;
+    gap: 1rem;
+}
+
+.right_grid_row > div {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.right_grid_row > * input, .right_grid_row > * label {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.right_grid_row > * label {
+    font-weight: bold;
+    color: rgb(253, 130, 150);
+    background-color: #ddd;
+}
+
+.right_grid_row > * input {
+    font-size: 13px;
+    border: 1px solid #ddd;
+}
+
+.right_grid_col_2 > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_grid_col_2 > div > input {
+    width: 100%;
+}
+
+.right_grid_col_2 > * button {
+    width: 30%;
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-left: 0.5rem;
+    color: white;
+    background-color: rgb(47, 47, 47);;
+}
+
+.familyTypeRadio {
+    display: flex; 
+}
+
+.familyTypeRadio > span {
+    margin-right: 20px;
+}
+
+.familyTypeRadio > span > label {
+    margin-left: 8px;
+}
+
+/* btns */
+.searchResetBtn > button, input {
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.searchResetBtn > button {
+    margin-right: 10px;
+    background-color: #00a6ed;
+    color: white
+}
+
+.searchResetBtn > input {
+    margin-left: 10px;
+}
+
+@media (min-width: 400px) and (max-width: 575.25px) {
+    .right_grid_row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+    }
+    .right_grid_row > div {
+        width: 49%;
+    }
+}
